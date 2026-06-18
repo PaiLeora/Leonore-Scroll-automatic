@@ -1,0 +1,14 @@
+workflows:
+  android:
+    name: Android Build
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        ANDROID_COMPILE_SDK: "33"
+    scripts:
+      - name: Build Android APK
+        script: |
+          chmod +x gradlew
+          ./gradlew clean assembleRelease
+    artifacts:
+      - app/build/outputs/apk/release/*.apk

@@ -1,0 +1,30 @@
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+local.properties
+app/local.properties
+build/
+app/build/
+.gradle/
+.idea/
+*.iml
+*.iws
+.idea/
+.DS_Store
+
+# Gradle
+gradle-wrapper.jar
+!gradle-wrapper.jar
+.gradle/
+
+# Logs
+*.log
+
+# Codemagic
+cm_*
+
+# OS
+Thumbs.db
+.DS_Store
